@@ -1,0 +1,147 @@
+li{
+  position: relative;
+  float: left;
+  height: 40px;
+  width: 40px;
+}
+
+ul{
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+div#snake-game{
+  width: 800px;
+  border: 30px solid skyblue;
+  border-radius: 5px;
+  background-color: grey;
+  position: relative;
+  float: left;
+}
+
+.wrapper{
+  min-width: 1260px;
+  height: 500px;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.extras{
+  color: white;
+  font-size: 100px;
+  position: relative;
+float: left;
+border: 30px solid skyblue;
+border-radius: 5px;
+background-color: grey;
+height: 800px;
+width: 300px;
+}
+
+h5{
+  margin-top: 20px;
+  font-family: serif;
+  margin-bottom: 20px;
+  font-family: helvetica;
+}
+
+.score{
+  font-family: helvetica;
+}
+
+.snake {
+  color: green;
+  background: orange;
+}
+
+.apple{
+  background-color: red;
+  border-radius: 20px;
+}
+
+.snake.head.N {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  /*background-color: red;*/
+}
+
+.snake.head.S {
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  /*background-color: red;*/
+
+}
+
+.snake.head.E {
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  /*background-color: red;*/
+
+}
+
+.snake.head.W {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  /*background-color: red;*/
+
+}
+
+/*.snake.tail.S {
+	width: 0;
+	height: 0;
+	border-left: 20px solid grey;
+	border-right: 20px solid grey;
+
+	border-bottom: 40px solid black;
+}
+
+.snake.tail.N {
+	width: 0;
+	height: 0;
+	border-left: 20px solid grey;
+	border-right: 20px solid grey;
+
+	border-top: 40px solid black;
+}
+
+.snake.tail.W {
+
+	border-top: 20px solid grey;
+	border-bottom: 20px solid grey;
+
+	border-left: 40px solid black;
+}
+
+.snake.tail.E{
+	width: 0;
+	height: 0;
+	border-top: 20px solid grey;
+	border-bottom: 20px solid grey;
+
+	border-right:40px solid black;
+  }*/
+
+.snake.N {
+  background-color: purple;
+}
+
+.snake.S {
+  background-color: blue;
+}
+
+.snake.E {
+  background-color: green;
+}
+
+.snake.W {
+  background-color: teal;
+}
+.hidden{
+  display: none;
+}

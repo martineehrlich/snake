@@ -8,7 +8,15 @@
   <body>
     <center>
       <h1>Snake</h1>
-      <div id="snake-game"></div>
+      <div class="wrapper">
+        <div id="snake-game"></div>
+        <div class="extras">
+          <h5>Points</h5>
+          <div class="score">
+          </div>
+        </div>
+      </div>
+
     </center>
 
     <script src="../js/jquery-2.1.1.js"></script>
@@ -16,8 +24,9 @@
     <script src="../js/snake-view.js"></script>
 
     <script>
-      var $el = $('#snake-game');
-      var view = new Game.View (new Game.Game(), $el);
+    $(function () {
+      new Game.View($("#snake-game"));
+    });
     </script>
   </body>
 </html>
