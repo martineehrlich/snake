@@ -19,7 +19,6 @@
     return (this.i == (-1 * coord.i)) && (this.j == (-1 * coord.j));
   };
 
-
   var Snake = Game.Snake = function (board) {
     this.dir = 'N';
     this.board = board;
@@ -108,7 +107,6 @@
   Snake.prototype.isValid = function () {
     var head = this.head();
 
-    // this.trailSegments(head);
     if (!this.board.validPosition(this.head())) {
       return false;
     }

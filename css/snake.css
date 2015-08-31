@@ -1,8 +1,18 @@
+html{
+  background-color: black;
+}
+
+h1{
+  color: white;
+  font-family: helvetica;
+  font-size: 50px;
+}
+
 li{
   position: relative;
   float: left;
-  height: 40px;
-  width: 40px;
+  height: 25px;
+  width: 25px;
 }
 
 ul{
@@ -17,16 +27,50 @@ ul:after {
 }
 
 div#snake-game{
-  width: 800px;
-  border: 30px solid skyblue;
+  width: 500px;
+  border: 15px solid turquoise;
   border-radius: 5px;
-  background-color: grey;
+  background-color: black;
   position: relative;
   float: left;
 }
 
+.opening{
+  position: fixed;
+  margin-top: 100px;
+  z-index: 2;
+  color: white;
+  font-family: helvetica;
+  font-size: 20px;
+  margin-left: 70px;
+}
+
+.start-button{
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 215px;
+  z-index: 2;
+  color: white;
+}
+
+.gameover{
+  position: fixed;
+  margin-left: 220px;
+  margin-top: 100px;
+  z-index: 2;
+  color: white;
+}
+
+.gameover-text{
+  color: white;
+  font-size: 20px;
+  font-family: helvetica;
+  margin-bottom: 10px;
+}
+
 .wrapper{
-  min-width: 1260px;
+  min-width: 800px;
+  max-width: 800px;
   height: 500px;
   width: 20%;
   margin: 0 auto;
@@ -34,25 +78,77 @@ div#snake-game{
 
 .extras{
   color: white;
-  font-size: 100px;
+  font-size: 40px;
   position: relative;
-float: left;
-border: 30px solid skyblue;
-border-radius: 5px;
-background-color: grey;
-height: 800px;
-width: 300px;
+  float: left;
+  border: 15px solid turquoise;
+  border-radius: 5px;
+  background-color: black;
+  height: 500px;
+  width: 200px;
+}
+
+.instructions{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: helvetica;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.speed{
+  width: 120px;
+}
+
+.difficulty{
+  font-family: helvetica;
+  font-size: 28px;
+}
+
+button.active{
+  color: black;
+  background-color: white;
+}
+
+button{
+  font-size: 18px;
+  padding: 5px 14px;
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
 }
 
 h5{
   margin-top: 20px;
   font-family: serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: helvetica;
+}
+
+.points{
+  font-family: helvetica;
+  font-size: 30px;
+  margin-top: 40px;
 }
 
 .score{
   font-family: helvetica;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.highscore{
+  font-family: helvetica;
+  font-size: 26px;
+}
+
+.high-score{
+  font-family: helvetica;
+  margin-top: 20px;
+  font-size: 26px;
 }
 
 .snake {
@@ -92,40 +188,6 @@ h5{
 
 }
 
-/*.snake.tail.S {
-	width: 0;
-	height: 0;
-	border-left: 20px solid grey;
-	border-right: 20px solid grey;
-
-	border-bottom: 40px solid black;
-}
-
-.snake.tail.N {
-	width: 0;
-	height: 0;
-	border-left: 20px solid grey;
-	border-right: 20px solid grey;
-
-	border-top: 40px solid black;
-}
-
-.snake.tail.W {
-
-	border-top: 20px solid grey;
-	border-bottom: 20px solid grey;
-
-	border-left: 40px solid black;
-}
-
-.snake.tail.E{
-	width: 0;
-	height: 0;
-	border-top: 20px solid grey;
-	border-bottom: 20px solid grey;
-
-	border-right:40px solid black;
-  }*/
 
 .snake.N {
   background-color: purple;

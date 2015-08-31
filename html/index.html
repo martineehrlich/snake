@@ -9,11 +9,45 @@
     <center>
       <h1>Snake</h1>
       <div class="wrapper">
-        <div id="snake-game"></div>
-        <div class="extras">
-          <h5>Points</h5>
-          <div class="score">
+        <div class="opening">
+          Welcome to Snake. Select a difficulty to play!
+        </div>
+        <div class="start-button">
+          <button class="hidden start" type="button" name="button">Start</button>
+        </div>
+        <div class="gameover hidden">
+          <div class="gameover-text">
+            Game Over!
           </div>
+          <button type="button" name="button" class="retry">Retry</button>
+        </div>
+        <div id="snake-game">
+        </div>
+        <div class="extras">
+          <div class="instructions">
+            Use the arrow keys to move the snake. Use "p" to pause.
+          </div>
+          <div class="points">
+            Score
+          </div>
+          <div class="score">
+            0
+          </div>
+          <div class="speed">
+            <div class="difficulty">
+              Difficulty
+            </div>
+            <button class="easy" type="button" name="button">Easy</button>
+            <button class "medium" type="button" name="button">Medium</button>
+            <button class="hard" type="button" name="button">Hard</button>
+          </div>
+          <div class="high-score">
+            Highscore
+            <div class="highscore">
+              0
+            </div>
+          </div>
+
         </div>
       </div>
 
