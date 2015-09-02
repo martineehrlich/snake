@@ -54,7 +54,7 @@
     );
   };
 
-  View.DIFFICULTY = {"easy": 100, "medium": 60, "hard": 30 };
+  View.DIFFICULTY = {"easy": 200, "medium": 100, "hard": 80 };
 
 
   View.prototype.handleKey = function (event) {
